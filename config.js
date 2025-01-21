@@ -2,7 +2,7 @@ var config = {
     style: 'mapbox://styles/germanfuentes/cm5y7vma9000t01qz6y4y8239',
     accessToken: 'pk.eyJ1IjoiZ2VybWFuZnVlbnRlcyIsImEiOiJjbTN0MmN0MTcwM3QyMmtwdW9oYXh5c3IxIn0.9Hdplt9Zub25GnbsZaxJBw',
     showMarkers: false,
-    theme: 'dark',
+    theme: 'light',
     markerColor: '#FFCC06',
     //projection: 'equirectangular',
     //Read more about available projections here
@@ -11,7 +11,7 @@ var config = {
     insetOptions: {
         markerColor: 'orange'
     },
-    use3dTerrain: false, //set true for enabling 3D maps.
+    use3dTerrain: true, //set true for enabling 3D maps.
     title: '',
     subtitle: '',
     byline: '',
