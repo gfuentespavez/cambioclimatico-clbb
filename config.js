@@ -2,7 +2,7 @@ var config = {
     style: 'mapbox://styles/germanfuentes/cm5y7vma9000t01qz6y4y8239',
     accessToken: 'pk.eyJ1IjoiZ2VybWFuZnVlbnRlcyIsImEiOiJjbTN0MmN0MTcwM3QyMmtwdW9oYXh5c3IxIn0.9Hdplt9Zub25GnbsZaxJBw',
     showMarkers: false,
-    theme: 'dark',
+    theme: 'light',
     markerColor: '#FFCC06',
     //projection: 'equirectangular',
     //Read more about available projections here
@@ -20,7 +20,7 @@ var config = {
     chapters: [
         {
             id: 'intro',
-            alignment: 'center',
+            alignment: 'left',
             hidden: false,
             title: '<h3 class="custom-main-title">Aumento del nivel del mar en el Gran Concepción</h3>',
             subs: `
@@ -43,7 +43,7 @@ var config = {
         },
         {
             id: 'bajada',
-            alignment: 'center',
+            alignment: 'left',
             hidden: false,
             title: '<h3 class="custom-main-title"></h3>',
             subs: `
@@ -65,12 +65,15 @@ var config = {
         },
         {
             id: 'explora',
-            alignment: 'center',
+            alignment: 'left',
             hidden: false,
             title: '',
             subs: `
             <h3 class="custom-subs">
             Las comunas afectadas por el cambio climático son Tomé, Penco, Talcahuano, Hualpén, San Pedro de la Paz, Coronel y Lota.
+            <br>
+            <br>
+            <b>Explora tu comuna en el mapa interactivo.</b>
             </h3>
 `,
             location: {
@@ -87,7 +90,7 @@ var config = {
         },
         {
             id: 'explora',
-            alignment: 'center',
+            alignment: 'left',
             hidden: true,
             title: '',
             subs: '',
