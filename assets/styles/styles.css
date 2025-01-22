@@ -31,6 +31,31 @@
     height: auto;
 }
 
+.attribution-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #191919; /* Dark background */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 10px 0;
+    font-family: "Roboto Slab", serif;
+    font-size: 0.9rem;
+    z-index: 1000;
+    border-top: 2px solid #ffcc06; /* Highlighted border */
+}
+
+.attribution-banner a {
+    color: #ffcc06; /* Highlight link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+}
+
+.attribution-banner a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
 
 .custom-main-title {
     font-size: 3rem;
