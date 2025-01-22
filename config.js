@@ -32,7 +32,7 @@ var config = {
                     Algunas aproximaciones indican que el nivel del mar podría subir hasta 2.3 metros por cada grado Celsius de aumento de temperatura por sobre niveles pre industriales.
                     <br>
                     <br>
-                    Las proyecciones que verás en este mapa están proyectadas hacia el 2100, estimando la población y cantidad de viviendas del 2035.
+                    <b>Las proyecciones que verás en este mapa están hacia el 2100, estimando la población y cantidad de viviendas del 2035.</b>
                     <br>
                     <br>
                 </h3>
