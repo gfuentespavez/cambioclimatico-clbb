@@ -76,6 +76,35 @@
       width: 100%;
     }
 
+    /* Responsive */
+    @media (max-width: 480px) {
+      #header h1,
+      #header h2,
+      #header p {
+        font-size: 1rem; /* Scale down text for smaller screens */
+        padding: 1vh 5vw; /* Add padding for small screens */
+        text-align: center; /* Center-align for better readability */
+      }
+
+      .lefty {
+        width: 90%; /* Adjust width for smaller screens */
+        margin-left: 5%; /* Center horizontally */
+      }
+
+      .step div {
+        padding: 15px 20px; /* Reduce padding for smaller screens */
+        font-size: 0.9rem; /* Adjust font size */
+        line-height: 1.4rem; /* Adjust line spacing */
+      }
+
+      .step {
+        margin-bottom: 30vh; /* Reduce spacing for smaller screens */
+      }
+
+      .step img {
+        max-width: 100%; /* Ensure images fit within the container */
+      }
+    }
   </style>
 </head>
 
