@@ -6,7 +6,6 @@
     z-index: 9999;
 }
 
-
 .custom-subs {
     font-size: 1.35rem;
     font-family: "Roboto Slab", serif;
@@ -39,17 +38,27 @@
     background-color: #191919;
     color: #ffffff;
     text-align: center;
-    padding: 5px 0;
+    padding: 10px 0;
     font-family: "Roboto Slab", serif;
     font-size: 1rem;
     z-index: 1000;
     border-top: 1px solid #ffcc06; /* Highlighted border */
+    display: flex; /* Use flexbox for better alignment */
+    justify-content: center; /* Center-align content */
+    align-items: center; /* Vertically align items */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.attribution-banner p {
+    margin: 0 10px; /* Add spacing around attribution text */
+    font-size: 0.9rem; /* Slightly smaller font */
 }
 
 .attribution-banner a {
     color: #ffcc06;
     text-decoration: none;
     font-weight: bold;
+    margin: 0 5px; /* Add space between links */
 }
 
 .attribution-banner a:hover {
@@ -118,28 +127,29 @@ sup {
 .home-button-container {
     position: fixed;
     top: 100px; /* Adjust vertical position */
-    right: 30px; /* Adjust horizontal position */
+    left: 30px; /* Adjust horizontal position */
     z-index: 1000; /* Ensure it appears above other elements */
 }
 
 /* Button Styles */
 .home-button {
-    background-color: black; /* Primary button color */
-    color: white !important; /* White text */
-    text-decoration: none; /* Remove underline */
-    font-family: 'Roboto Slab', serif;
-    font-size: 1rem; /* Default font size */
-    font-weight: bold;
-    padding: 10px 20px; /* Padding around text */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s, transform 0.2s; /* Smooth hover effect */
+    display: inline-block;
+    background-color: #191919;
+    color: white;
     text-decoration: none;
+    font-family: "Roboto Slab", serif;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-left: 10px; /* Add spacing next to attribution */
+    margin-top: 5px; /* Space above in case of wrapping */
 }
 
 /* Responsive */
 @media (max-width: 480px) {
     .custom-logo {
-        display: none;
         max-width: 100px;
     }
 
@@ -169,9 +179,9 @@ sup {
         font-size: 1rem;
         line-height: 1.4rem;
     }
-
-    .attribution-banner {
-        font-size: 0.8rem;
+        .attribution-banner {
+            flex-direction: column; /* Stack items vertically */
+            padding: 15px 10px;
     }
 
     .next-chapter-button {
@@ -181,12 +191,16 @@ sup {
 
     .home-button-container {
         top: 20px; /* Adjust position for smaller screens */
-        right: 20px;
+        left: 50px;
     }
 
     .home-button {
-        font-size: 0.9rem; /* Slightly smaller text size */
-        padding: 8px 16px; /* Adjust padding */
+        margin-top: 10px; /* Ensure spacing for stacked layout */
+        font-size: 0.9rem; /* Adjust button font size */
     }
+        .attribution-banner p {
+            text-align: center;
+            margin-bottom: 5px;
+            font-size: 0.85rem; /* Adjust font size for small screens */
+        }
 }
-
