@@ -2,7 +2,7 @@ var config = {
     style: 'mapbox://styles/germanfuentes/cm5y7vma9000t01qz6y4y8239',
     accessToken: 'pk.eyJ1IjoiZ2VybWFuZnVlbnRlcyIsImEiOiJjbTN0MmN0MTcwM3QyMmtwdW9oYXh5c3IxIn0.9Hdplt9Zub25GnbsZaxJBw',
     showMarkers: false,
-    theme: 'light',
+    theme: 'dark',
     markerColor: '#FFCC06',
     //projection: 'equirectangular',
     //Read more about available projections here
@@ -11,26 +11,26 @@ var config = {
     insetOptions: {
         markerColor: 'orange'
     },
-    use3dTerrain: true, //set true for enabling 3D maps.
+    use3dTerrain: false, //set true for enabling 3D maps.
     title: '',
     subtitle: '',
     byline: '',
     image: '<img src="./assets/images/black.png" alt="" class="custom-logo">',
+
     auto: false,
     chapters: [
         {
-            id: 'intro',
-            alignment: 'center',
+            id: '01',
+            alignment: 'left',
             hidden: false,
-            title: '<h3 class="custom-main-title">Aumento del nivel del mar en el Gran Concepción</h3>',
+            title: '<h3 class="custom-main-title">¿Qué barrios del Gran Concepción quedarían bajo el mar?</h3>',
             subs: `
                 <h3 class="custom-subs">
-                    La temperatura en los mares y océanos registra un alza que está peligrosamente cerca de los límites establecidos por el IPCC.
-                    
+                    De mantenerse la tendencia del aumento de la temperatura global, el aumento en el nivel de los océanos podría arrasar miles de viviendas, hospitales, escuelas, carreteras y aeropuertos.
                 </h3>
 `,
             location: {
-                center: [-33.40099, -36.77148],
+                center: [-73.217, -36.796],
                 zoom: 9.34,
                 pitch: 40,
                 bearing: 5,
@@ -42,64 +42,55 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'bajada',
-            alignment: 'center',
-            hidden: true,
-            title: '<h3 class="custom-main-title"></h3>',
-            subs: `
-                <h3 class="custom-subs">
-                    Las proyecciones están en base a un aumento en la temperatura de los mares de 1°C y 2°C. De mantenerse las tendencias, varios barrios, equipamientos industriales, servicios públicos y carreteras quedarían seriamente afectadas.
-                </h3>
-`,
+            id: '02',
+            alignment: 'left',
+            hidden: false,
+            title: '',
+            description:'<h3 class=custom-description>Algunas aproximaciones indican que el nivel del mar podría subir hasta 2.3 metros por cada grado Celsius de aumento de temperatura por sobre niveles pre industriales.</h3>',
             location: {
-                center: [-73.10207, -36.81371],
+                center: [-73.217, -36.796],
                 zoom: 9.34,
                 pitch: 40,
                 bearing: 5,
             },
-            mapAnimation: 'flyTo',
-            rotateAnimation: 'true',
-            callback: '',
+            mapAnimation: 'easeTo',
+            rotateAnimation: true,
             onChapterEnter: [],
-            onChapterExit: []
+            onChapterExit: [],
         },
         {
-            id: 'explora',
-            alignment: 'center',
-            hidden: true,
+            id: '03',
+            alignment: 'left',
+            hidden: false,
             title: '',
-            subs: `
-            <h3 class="custom-subs">
-            Las comunas afectadas por el cambio climático son Tomé, Penco, Talcahuano, Hualpén, San Pedro de la Paz, Coronel y Lota.
+            description: `<h3 class=custom-description>Las proyecciones que verás en este mapa están proyectadas hacia el 2100, estimando la población y cantidad de viviendas del 2035.
+                
             </h3>
 `,
+            image: '',
             location: {
-                center: [-73.10207, -36.81371],
-                zoom: 10.34,
-                pitch: 40,
-                bearing: 5,
+                center: [-73.217, -36.796],
+                zoom: 10.72,
+                pitch: 20,
+                bearing: -90,
             },
-            mapAnimation: 'flyTo',
-            rotateAnimation: 'false',
+            mapAnimation: 'easeTo',
+            rotateAnimation: false,
             callback: '',
             onChapterEnter: [],
-            onChapterExit: []
+            onChapterExit: [],
         },
         {
-            id: 'explora',
-            alignment: 'center',
-            hidden: true,
+            id: 'final-chapter',
             title: '',
-            subs: '',
+            description: '',
             location: {
-                center: [-73.10207, -36.81371],
-                zoom: 10.34,
-                pitch: 40,
-                bearing: 5,
+                center: [-73.217, -36.796],
+                zoom: 10.72,
+                pitch: 20,
+                bearing: -90,
             },
-            mapAnimation: 'flyTo',
-            rotateAnimation: 'false',
-            callback: '',
+            mapAnimation: 'easeTo',
             onChapterEnter: [],
             onChapterExit: []
         },
