@@ -20,8 +20,7 @@
 .custom-subs {
     font-size: 1.35rem;
     font-family: "Roboto Slab", serif;
-    font-weight: 400;
-    color: white;
+    color: #3B6790;
     text-align: left;
     margin-left: -50px;
     margin-top: -30px;
@@ -34,13 +33,13 @@
 }
 
 .custom-main-title {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 700;
     font-family: "Roboto Slab", serif;
     text-align: left;
     line-height: 0.92;
     letter-spacing: 1px;
-    margin-top: 2rem;
+    margin-top: -2rem;
 }
 
 .highlight {
@@ -63,9 +62,15 @@
     line-height: 1.2;
 }
 
+.closure {
+    margin: -20vh;
+}
+
 .custom-description {
-    font-size: 1.1rem;
-    line-height: 1.5rem;
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: #3B6790;
+    line-height: 1.7rem;
     text-align: left;
     margin-right: 1rem;
     margin-bottom: -1rem;
@@ -244,6 +249,7 @@ sup {
     }
 
     .custom-description {
+        color: black;
         font-size: 2rem;
         padding: 0 15px; /* Add more padding for small screens */
     }
@@ -264,4 +270,3 @@ sup {
         padding: 0 15px; /* Add more padding for small screens */
     }
 }
-x
