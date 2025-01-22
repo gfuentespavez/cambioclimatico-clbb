@@ -33,6 +33,9 @@ var config = {
                     <br>
                     <br>
                     Las proyecciones que verás en este mapa están proyectadas hacia el 2100, estimando la población y cantidad de viviendas del 2035.
+                    <br>
+                    <br>
+                    Desplázate por el mapa para conocer las áreas en riesgo.
                 </h3>
 `,
             location: {
