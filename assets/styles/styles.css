@@ -16,6 +16,22 @@
     margin-top: -30px;
 }
 
+.legend {
+    position: fixed;
+    max-width: 300px;
+    bottom: 20px; /* Adjust to place it above the bottom edge */
+    right: 20px; /* Adjust to place it away from the left edge */
+    z-index: 9999; /* Ensure it's above other content */
+    width: 250px; /* Adjust the size as needed */
+    padding: 10px;
+}
+
+.legend img {
+    width: 100%; /* Ensures the image scales to the container */
+    height: auto;
+}
+
+
 .custom-main-title {
     font-size: 3rem;
     font-weight: 700;
@@ -69,6 +85,7 @@ sup {
     font-size: 1.2rem;
     font-weight: bold;
     color: #3B6790 !important;
+    text-underline: none !important;
 }
 
 /* Smaller on mobile */
@@ -81,7 +98,7 @@ sup {
         font-size: 14px;
     }
     .custom-description {
-        font-size: 14px;
+        font-size: 3px;
         padding: 0 10px; /* padding para evitar que el texto toque los bordes */
     }
 }
