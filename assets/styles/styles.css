@@ -18,8 +18,8 @@
 
 .legend {
     position: fixed;
-    max-width: 300px;
-    bottom: 20px; /* Adjust to place it above the bottom edge */
+    max-width: 200px;
+    bottom: 60px; /* Adjust to place it above the bottom edge */
     right: 20px; /* Adjust to place it away from the left edge */
     z-index: 9999; /* Ensure it's above other content */
     width: 250px; /* Adjust the size as needed */
@@ -36,19 +36,19 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #191919; /* Dark background */
-    color: #ffffff; /* White text */
+    background-color: #191919;
+    color: #ffffff;
     text-align: center;
-    padding: 10px 0;
+    padding: 5px 0;
     font-family: "Roboto Slab", serif;
-    font-size: 0.9rem;
+    font-size: 1rem;
     z-index: 1000;
-    border-top: 2px solid #ffcc06; /* Highlighted border */
+    border-top: 1px solid #ffcc06; /* Highlighted border */
 }
 
 .attribution-banner a {
-    color: #ffcc06; /* Highlight link color */
-    text-decoration: none; /* Remove underline */
+    color: #ffcc06;
+    text-decoration: none;
     font-weight: bold;
 }
 

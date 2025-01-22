@@ -26,7 +26,7 @@ var config = {
             title: '<h3 class="custom-main-title">¿Qué barrios del Gran Concepción quedarían bajo el mar?</h3>',
             description: `
                 <h3 class="custom-description">
-                    De mantenerse la tendencia del aumento de la temperatura global, el aumento en el nivel de los océanos podría arrasar miles de viviendas, hospitales, escuelas, carreteras y aeropuertos.
+                    De mantenerse la tendencia del aumento de la temperatura global, el aumento en el nivel de los océanos podría afectar miles de viviendas, hospitales, escuelas, carreteras y aeropuertos.
                     <br>
                     <br>
                     Algunas aproximaciones indican que el nivel del mar podría subir hasta 2.3 metros por cada grado Celsius de aumento de temperatura por sobre niveles pre industriales.
