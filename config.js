@@ -20,17 +20,17 @@ var config = {
     chapters: [
         {
             id: 'intro',
-            alignment: 'left',
+            alignment: 'center',
             hidden: false,
-            title: '<h3 class="custom-main-title">Aumento HELLOOOOOOdel nivel del mar en el Gran Concepción</h3>',
+            title: '<h3 class="custom-main-title">Aumento del nivel del mar en el Gran Concepción</h3>',
             subs: `
                 <h3 class="custom-subs">
-                    Con la proyección hacia el 2035,las zonas en azul claro quedarían bajo el mar en el escenario del aumento en la temperatura del mar en 1°C.
-                    En azul oscuro, se muestran las zonas que quedarían bajo el mar en el escenario de la subida del nivel del mar a causa de un aumento en 2°C.
+                    La temperatura en los mares y océanos registra un alza que está peligrosamente cerca de los límites establecidos por el IPCC.
+                    
                 </h3>
 `,
             location: {
-                center: [-73.10207, -36.81371],
+                center: [-33.40099, -36.77148],
                 zoom: 9.34,
                 pitch: 40,
                 bearing: 5,
@@ -43,8 +43,8 @@ var config = {
         },
         {
             id: 'bajada',
-            alignment: 'left',
-            hidden: false,
+            alignment: 'center',
+            hidden: true,
             title: '<h3 class="custom-main-title"></h3>',
             subs: `
                 <h3 class="custom-subs">
@@ -65,15 +65,12 @@ var config = {
         },
         {
             id: 'explora',
-            alignment: 'left',
-            hidden: false,
+            alignment: 'center',
+            hidden: true,
             title: '',
             subs: `
             <h3 class="custom-subs">
             Las comunas afectadas por el cambio climático son Tomé, Penco, Talcahuano, Hualpén, San Pedro de la Paz, Coronel y Lota.
-            <br>
-            <br>
-            <b>Explora tu comuna en el mapa interactivo.</b>
             </h3>
 `,
             location: {
@@ -90,7 +87,7 @@ var config = {
         },
         {
             id: 'explora',
-            alignment: 'left',
+            alignment: 'center',
             hidden: true,
             title: '',
             subs: '',
