@@ -1,3 +1,5 @@
+
+
 .custom-logo {
     position: fixed;  /* Esto fija la imagen en la pantalla */
     top: 20px;        /* Distancia desde la parte superior */
@@ -6,16 +8,6 @@
     z-index: 9999;    /* Asegúrate de que la imagen esté por encima de otros elementos */
 }
 
-.custom-byline {
-    position: absolute;
-    font-size: 2rem;
-    font-family: "Roboto Slab", serif;
-    text-align: left;
-    color: #ffcc06;
-    left:80px;
-    max-width: 150px;
-    position: relative;
-}
 
 .custom-subs {
     font-size: 1.35rem;
@@ -26,14 +18,8 @@
     margin-top: -30px;
 }
 
-.custom-subtitle {
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-align: left;
-}
-
 .custom-main-title {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
     font-family: "Roboto Slab", serif;
     text-align: left;
@@ -62,60 +48,13 @@
     line-height: 1.2;
 }
 
-.closure {
-    margin: -20vh;
-}
-
 .custom-description {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: #3B6790;
     line-height: 1.7rem;
     text-align: left;
     margin-right: 1rem;
-    margin-bottom: -1rem;
-}
-
-.custom-button {
-    font-family: "Roboto Slab", serif;
-    margin-top: 3rem;
-    padding: 1rem;
-    font-size: 16px;
-    background-color: #191919;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.custom-button:hover {
-    background-color: #ffcc06;
-    color: black;
-}
-
-.image-row {
-    display: flex;
-    gap: 5rem;
-    justify-content: left;
-    flex-wrap: wrap;
-}
-
-.chapter-image {
-    width: 100%;
-    max-width: 100px;
-    height: auto;
-    display: block;
-    margin-left: -2rem;
-}
-
-.usos h4 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    font-family: "Roboto Slab", serif;
-    text-align: left;
-    color: #ffcc06;
-    margin-bottom: -2rem;
-    margin-left: -3rem;
 }
 
 sup {
@@ -124,76 +63,6 @@ sup {
     color: #ffcc06;
     font-weight: bold;
 }
-
-#closure-content {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: #191919;
-    color: white;
-    padding: 20px;
-}
-
-#closure-image {
-    max-width: 300px;
-    margin-top: 40vh;
-    margin-bottom: 10px;
-}
-
-#closure-content h1 {
-    font-family: "Roboto Slab", serif;
-    font-weight: 400;
-    font-size: 2.5em;
-    margin-bottom: 30px;
-}
-
-#closure-content p {
-    font-size: 1.2em;
-    margin-bottom: 25px;
-    max-width: 600px;
-}
-
-/* Button Styling */
-.closure-button {
-    display: inline-block;
-    padding: 15px 30px;
-    background: #191919;
-    color: #ffcc06;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-    outline: #ffcc06 solid 1px;
-}
-
-.closure-button:hover {
-    background: #ffcc06;
-    color: #191919 !important;
-}
-
-/* Footer Styling */
-.footer {
-    text-align: center;
-    margin-top: 3rem;
-    padding: 20px;
-}
-
-.footer h1 {
-    font-family: "Roboto Slab", serif;
-    font-weight: 400;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.footer .closure-button {
-    margin-top: 20px;
-}
-
-
 
 /* Smaller on mobile */
 @media (max-width: 768px) {
