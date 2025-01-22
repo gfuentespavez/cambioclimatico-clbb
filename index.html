@@ -83,7 +83,8 @@
     }
 
     .lefty {
-      width: 35vw;
+      width: 30vw;
+      height: auto;
       margin-left: 5vw;
     }
 
@@ -99,27 +100,28 @@
     }
 
     .light {
-      color: white;
+      color: #333;
+      background-color: #ffcc06;
+      box-shadow: 3px 3px 555px #888888;
       border-radius: 10px;
+
     }
 
     .dark {
-      color: #fff;
-      background-color: rgba(0,0,0,0.8);
+      color: #3B6790;
       border-radius: 10px;
-      margin-bottom: 20rem;
       margin-top: 3rem;
     }
 
     .custom-subtitle {
       font-size: 13px;
-      color: #ffcc06;
+      color: black;
       font-weight: bold;
     }
 
     .step {
-      padding-bottom: 50vh;
-      /* margin-bottom: 10vh; */
+      padding-bottom: 2vh;
+      margin-bottom: 40vh;
       opacity: 0.25;
     }
 
@@ -291,13 +293,13 @@
     bearing: config.chapters[0].location.bearing,
     pitch: config.chapters[0].location.pitch,
     interactive: true,
-    projection: config.projection,
     maxBounds: [
       [-73.3, -37.2], // Lota
       [-72.8, -36.4]  // Pingueral
     ],
-    minZoom: 10,
-    maxZoom: 15,
+    minZoom: 11, // Límite mínimo
+    maxZoom: 16,  // Límite máximo
+    projection: config.projection
   });
 
   if (config.showMarkers) {
@@ -315,7 +317,7 @@
         'type': 'raster-dem',
         'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
         'tileSize': 512,
-        'maxzoom': 15
+        'maxzoom': 14
       });
       // add the DEM source as a terrain layer with exaggerated height
       map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
@@ -331,16 +333,6 @@
         }
       });
     };
-
-    //Controles del mapa
-    map.addControl(new mapboxgl.NavigationControl(), 'bottom-left');
-    map.addControl(new mapboxgl.FullscreenControl(), 'bottom-left');
-    map.addControl(new mapboxgl.GeolocateControl({
-      positionOptions: { enableHighAccuracy: true },
-      trackUserLocation: true,
-      showUserHeading: true
-    }), 'top-right');
-    map.addControl(new mapboxgl.ScaleControl({ maxWidth: 80, unit: 'metric' }));
 
     // setup the instance, pass callback functions
     scroller
