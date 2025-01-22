@@ -24,9 +24,15 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: '<h3 class="custom-main-title">¿Qué barrios del Gran Concepción quedarían bajo el mar?</h3>',
-            subs: `
-                <h3 class="custom-subs">
+            description: `
+                <h3 class="custom-description">
                     De mantenerse la tendencia del aumento de la temperatura global, el aumento en el nivel de los océanos podría arrasar miles de viviendas, hospitales, escuelas, carreteras y aeropuertos.
+                    <br>
+                    <br>
+                    Algunas aproximaciones indican que el nivel del mar podría subir hasta 2.3 metros por cada grado Celsius de aumento de temperatura por sobre niveles pre industriales.
+                    <br>
+                    <br>
+                    Las proyecciones que verás en este mapa están proyectadas hacia el 2100, estimando la población y cantidad de viviendas del 2035.
                 </h3>
 `,
             location: {
@@ -46,7 +52,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: '',
-            description:'<h3 class=custom-description>Algunas aproximaciones indican que el nivel del mar podría subir hasta 2.3 metros por cada grado Celsius de aumento de temperatura por sobre niveles pre industriales.</h3>',
+            description:'',
             location: {
                 center: [-73.217, -36.796],
                 zoom: 9.34,
@@ -63,10 +69,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: '',
-            description: `<h3 class=custom-description>Las proyecciones que verás en este mapa están proyectadas hacia el 2100, estimando la población y cantidad de viviendas del 2035.
-                
-            </h3>
-`,
+            description: '',
             image: '',
             location: {
                 center: [-73.217, -36.796],
@@ -88,9 +91,10 @@ var config = {
                 center: [-73.217, -36.796],
                 zoom: 10.72,
                 pitch: 20,
-                bearing: -90,
+                bearing: 0,
             },
             mapAnimation: 'easeTo',
+            rotateAnimation: false,
             onChapterEnter: [],
             onChapterExit: []
         },
