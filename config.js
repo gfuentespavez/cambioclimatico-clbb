@@ -11,7 +11,7 @@ var config = {
     insetOptions: {
         markerColor: 'orange'
     },
-    use3dTerrain: false, //set true for enabling 3D maps.
+    use3dTerrain: true, //set true for enabling 3D maps.
     title: '',
     subtitle: '',
     byline: '',
