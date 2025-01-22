@@ -1,11 +1,11 @@
 
 
 .custom-logo {
-    position: fixed;  /* Esto fija la imagen en la pantalla */
-    top: 20px;        /* Distancia desde la parte superior */
-    right: 20px;       /* Distancia desde la parte izquierda */
-    max-width: 150px; /* Limita el tamaño máximo de la imagen */
-    z-index: 9999;    /* Asegúrate de que la imagen esté por encima de otros elementos */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    max-width: 150px;
+    z-index: 9999;
 }
 
 
