@@ -35,8 +35,10 @@ var config = {
                     Las proyecciones que verás en este mapa están proyectadas hacia el 2100, estimando la población y cantidad de viviendas del 2035.
                     <br>
                     <br>
-                    Desplázate por el mapa para conocer las áreas en riesgo.
                 </h3>
+                <div class="button-container">
+                    <a href="#final-chapter" class="next-chapter-button">Explora el mapa</a>
+                </div>
 `,
             location: {
                 center: [-73.217, -36.796],
@@ -52,39 +54,18 @@ var config = {
         },
         {
             id: '02',
-            alignment: 'left',
-            hidden: false,
-            title: '',
-            description:'',
-            location: {
-                center: [-73.217, -36.796],
-                zoom: 9.34,
-                pitch: 40,
-                bearing: 5,
-            },
-            mapAnimation: 'easeTo',
-            rotateAnimation: true,
-            onChapterEnter: [],
-            onChapterExit: [],
-        },
-        {
-            id: '03',
-            alignment: 'left',
-            hidden: false,
             title: '',
             description: '',
-            image: '',
             location: {
                 center: [-73.217, -36.796],
                 zoom: 10.72,
                 pitch: 20,
-                bearing: -90,
+                bearing: 0,
             },
             mapAnimation: 'easeTo',
             rotateAnimation: false,
-            callback: '',
             onChapterEnter: [],
-            onChapterExit: [],
+            onChapterExit: []
         },
         {
             id: 'final-chapter',
