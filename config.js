@@ -22,7 +22,7 @@ var config = {
             id: 'intro',
             alignment: 'left',
             hidden: false,
-            title: '<h3 class="custom-main-title">Aumento del nivel del mar en el Gran Concepción</h3>',
+            title: '<h3 class="custom-main-title">Aumento HELLOOOOOOdel nivel del mar en el Gran Concepción</h3>',
             subs: `
                 <h3 class="custom-subs">
                     Con la proyección hacia el 2035,las zonas en azul claro quedarían bajo el mar en el escenario del aumento en la temperatura del mar en 1°C.
