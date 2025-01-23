@@ -47,12 +47,14 @@
     }
 
     .lefty {
-      width: 40vw;
+      width: 25vw;
       margin-left: 1vw;
     }
 
     .dark {
-      color: #213555;
+      background-color: black;
+      border-radius: 10px;
+      margin-bottom: 45rem;
       margin-top: 3rem;
     }
 
@@ -269,7 +271,7 @@
     zoom: config.chapters[0].location.zoom,
     bearing: config.chapters[0].location.bearing,
     pitch: config.chapters[0].location.pitch,
-    interactive: true,
+    interactive: false,
     maxBounds: [
       [-73.3, -37.2], // Lota
       [-72.8, -36.4]  // Pingueral
@@ -296,6 +298,7 @@
         'tileSize': 512,
         'maxzoom': 14
       });
+
       // add the DEM source as a terrain layer with exaggerated height
       map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
 
@@ -308,14 +311,21 @@
           'sky-atmosphere-sun': [0.0, 0.0],
           'sky-atmosphere-sun-intensity': 15
         }
+      })
+
+      document.getElementById('toggle-interactivity').addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent default behavior of the link
+        map.interactive = true; // Enable interactivity on the map
+        console.log("Map interactivity enabled");
       });
+
     };
 
     // setup the instance, pass callback functions
     scroller
             .setup({
               step: '.step',
-              offset: 0.5,
+              offset: 0.9,
               progress: true
             })
             .onStepEnter(async response => {
@@ -358,7 +368,6 @@
                 chapter.onChapterExit.forEach(setLayerOpacity);
               }
             });
-
 
     if (config.auto) {
       document.querySelectorAll('[data-scrollama-index="0"]')[0].scrollIntoView();

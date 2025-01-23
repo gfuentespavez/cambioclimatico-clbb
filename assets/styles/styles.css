@@ -88,7 +88,8 @@
 }
 
 .custom-title {
-    font-size: 2rem;
+    color: white;
+    font-size: 1.5rem;
     font-weight: 700;
     font-family: "Roboto Slab", serif;
     text-align: left;
@@ -97,9 +98,9 @@
 }
 
 .custom-description {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 400;
-    color: #3B6790;
+    color: white;
     line-height: 1.7rem;
     text-align: left;
     margin-right: 1rem;
@@ -113,13 +114,12 @@ sup {
 }
 
 .next-chapter-button {
-    background-color: white;
     border-radius: 5px;
     padding: 0.5rem 1rem;
     font-family: "Roboto Slab", serif;
     font-size: 1.2rem;
     font-weight: bold;
-    color: #3B6790 !important;
+    color: white !important;
     text-decoration: none !important;
 }
 
