@@ -167,6 +167,7 @@ sup {
 
     .custom-main-title {
         font-size: 2rem;
+        color: white !important;
     }
 
     .highlight {

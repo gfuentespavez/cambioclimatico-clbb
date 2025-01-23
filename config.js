@@ -168,9 +168,7 @@ var config = {
             description: `
             <h3 class="custom-description">
                 En el escenario del aumento en 2°C la temperatura del mar, se estima la afectación a 32 establecimientos educacionales de párvulos y 28 de escolar, tres compañías de Bomberos, el Hospital Higueras y nueve kilómetros de la avenida Colón.
-                <br>
-                <br>
-                En cuanto a viviendas y personas, la proyección indica una afectación a más de 28 mil hogares y 81 mil vecinos de la comuna.
+                
             </h3>
             `,
             location: {
@@ -187,10 +185,15 @@ var config = {
             id: 'Talcahuano-3',
             alignment: 'left',
             title: '',
-            description: '',
+            description: `
+            <h3 class="custom-description">
+            En cuanto a viviendas y personas, la proyección indica una afectación a más de 28 mil hogares y 81 mil vecinos de la comuna.
+</h3>
+            
+            `,
             location: {
-                center: [-73.12137, -36.74095],
-                zoom: 11.02,
+                center: [-73.08742, -36.73990],
+                zoom: 13.31,
                 pitch: 0,
                 bearing: -90,
             },
