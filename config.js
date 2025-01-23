@@ -11,7 +11,7 @@ var config = {
     insetOptions: {
         markerColor: 'orange'
     },
-    use3dTerrain: false, //set true for enabling 3D maps.
+    use3dTerrain: false,
     title: '',
     subtitle: '',
     byline: '',
@@ -183,6 +183,19 @@ var config = {
             rotateAnimation: true,
             onChapterEnter: [],
             onChapterExit: []
+        },        {
+            id: 'Talcahuano-3',
+            alignment: 'left',
+            location: {
+                center: [-73.12137, -36.74095],
+                zoom: 11.02,
+                pitch: 0,
+                bearing: -90,
+            },
+            mapAnimation: 'easeTo',
+            rotateAnimation: true,
+            onChapterEnter: [],
+            onChapterExit: []
         },
         {
             id: 'San Pedro de la Paz',
@@ -271,9 +284,6 @@ var config = {
                 </h3>
                 <br>
                 <br>
-                <div class="button-container">
-                    <a href="#final-chapter" class="next-chapter-button" id="toggle-interactivity">Explora el mapa</a>
-                </div>
             `,
             location: {
                 center: [-73.15837, -37.09839],
@@ -289,8 +299,10 @@ var config = {
     ]
 };
 
+// Add other script logic, like initializing the map or loading content
 document.addEventListener('DOMContentLoaded', () => {
     const closureContent = document.getElementById('closure-content');
-    closureContent.style.display = 'block'; // Ensure it appears at the right moment
+    if (closureContent) {
+        closureContent.style.display = 'block'; // Ensure it appears at the right moment
+    }
 });
-

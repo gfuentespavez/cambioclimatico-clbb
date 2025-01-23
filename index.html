@@ -92,7 +92,6 @@
         width: 90%; /* Adjust width for smaller screens */
         margin-left: 5%; /* Center horizontally */
       }
-
       .step div {
         padding: 15px 20px; /* Reduce padding for smaller screens */
         font-size: 0.9rem; /* Adjust font size */
@@ -312,13 +311,6 @@
           'sky-atmosphere-sun-intensity': 15
         }
       })
-
-      document.getElementById('toggle-interactivity').addEventListener('click', function (event) {
-        event.preventDefault(); // Prevent default behavior of the link
-        map.interactive = true; // Enable interactivity on the map
-        console.log("Map interactivity enabled");
-      });
-
     };
 
     // setup the instance, pass callback functions
