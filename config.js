@@ -186,6 +186,8 @@ var config = {
         },        {
             id: 'Talcahuano-3',
             alignment: 'left',
+            title: '',
+            description: '',
             location: {
                 center: [-73.12137, -36.74095],
                 zoom: 11.02,
