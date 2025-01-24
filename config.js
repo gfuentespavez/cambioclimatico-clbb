@@ -291,9 +291,6 @@ var config = {
                 </h3>
                 <br>
                 <br>
-                <div class="button-container">
-                    <button id="redirect-interactive-map" class="redirect-button">Ir al mapa interactivo</button>
-                </div>
                            `,
             location: {
                 center: [-73.15837, -37.09839],
@@ -311,17 +308,6 @@ var config = {
 
 // Ir al mapa interactivo
 
-document.addEventListener('DOMContentLoaded', () => {
-    const redirectButton = document.getElementById('redirect-interactive-map');
-    if (redirectButton) {
-        redirectButton.addEventListener('click', () => {
-            // Replace '/interactive-map/' with the actual relative or absolute URL of your interactive map directory
-            window.location.href = '/interactive/index.html';
-        });
-    } else {
-        console.error('Redirect button not found');
-    }
-});
 
 // Add other script logic, like initializing the map or loading content
 document.addEventListener('DOMContentLoaded', () => {
