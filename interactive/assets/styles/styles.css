@@ -149,28 +149,6 @@ sup {
     margin-top: 5px; /* Space above in case of wrapping */
 }
 
-/* el puto botón */
-
-.redirect-button {
-    background-color: #FFCC06;
-    color: #000;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.redirect-button:hover {
-    background-color: #FFD836;
-}
-
-.button-container {
-    text-align: center;
-    margin-top: 20px;
-}
-
 /* Responsive */
 @media (max-width: 480px) {
     .custom-logo {

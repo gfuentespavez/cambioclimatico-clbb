@@ -52,9 +52,6 @@
     }
 
     .dark {
-      background-color: black;
-      moz-border-radius-topright: 10px;
-      moz-border-radius-bottomright: 10px;
       margin-bottom: 45rem;
       margin-top: 3rem;
     }
@@ -123,7 +120,7 @@
   <p>
     Fuente de datos por <a href="https://www.climatecentral.org" target="_blank">Climate Central</a>.
   </p>
-    <a href="#01" class="home-button">Volver arriba</a>
+    <button id="go-back" class="home-button">Volver a la historia</button>
 </div>
 
 <!-- Scrollama -->
@@ -271,7 +268,7 @@
     zoom: config.chapters[0].location.zoom,
     bearing: config.chapters[0].location.bearing,
     pitch: config.chapters[0].location.pitch,
-    interactive: false,
+    interactive: true,
     maxBounds: [
       [-73.3, -37.2], // Lota
       [-72.8, -36.4]  // Pingueral
@@ -367,6 +364,8 @@
     }
   });
 
-  </script>
+</script>
+
 </body>
+
 </html>

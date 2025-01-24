@@ -125,6 +125,7 @@ var config = {
                     <br>
                     <br>
                     Si la temperatura en el mar aumenta en 2°C, habrían más de 13 mil viviendas afectadas, sumando a 42 mil 560 personas estimadas hacia el 2035. Debido a su características topográficas, los humedales en Hualpén no actúan como amortiguadores en el aumento del nivel del mar.
+                    <br>
                 </h3>
             `,
             location: {
@@ -181,7 +182,8 @@ var config = {
             rotateAnimation: true,
             onChapterEnter: [],
             onChapterExit: []
-        },        {
+        },
+        {
             id: 'Talcahuano-3',
             alignment: 'left',
             title: '',
@@ -289,7 +291,10 @@ var config = {
                 </h3>
                 <br>
                 <br>
-            `,
+                <div class="button-container">
+                    <button id="redirect-interactive-map" class="redirect-button">Ir al mapa interactivo</button>
+                </div>
+                           `,
             location: {
                 center: [-73.15837, -37.09839],
                 zoom: 14.27,
@@ -303,6 +308,20 @@ var config = {
         },
     ]
 };
+
+// Ir al mapa interactivo
+
+document.addEventListener('DOMContentLoaded', () => {
+    const redirectButton = document.getElementById('redirect-interactive-map');
+    if (redirectButton) {
+        redirectButton.addEventListener('click', () => {
+            // Replace '/interactive-map/' with the actual relative or absolute URL of your interactive map directory
+            window.location.href = '/interactive/index.html';
+        });
+    } else {
+        console.error('Redirect button not found');
+    }
+});
 
 // Add other script logic, like initializing the map or loading content
 document.addEventListener('DOMContentLoaded', () => {
